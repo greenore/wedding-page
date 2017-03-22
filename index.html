@@ -32,6 +32,9 @@
 
 <body class="homepage">
 
+    <!-- Overlay image till style.css is loaded -->
+    <div id="loadOverlay" style="background-color:#FFFFFF; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>
+
     <!-- Header -->
     <div id="header">
         <div id="map"></div>
@@ -47,10 +50,10 @@
             <!-- Nav -->
             <nav id="nav">
                 <ul>
-                    <li><a href="#aboutus">Über uns</a></li>
+                    <li><a href="#willkommen">Willkommen</a></li>
                     <li><a href="#hochzeit">Hochzeit</a></li>
                     <li><a href="#trauzeugen">Trauzeugen</a></li>
-                    <li><a href="#hotels">Hotels</a></li>
+                    <li><a href="#hotels">Übernachtungen</a></li>
                     <li><a href="#anmeldung">Anmeldung</a></li>
                 </ul>
             </nav>
@@ -58,72 +61,86 @@
     </div>
 
     <!-- Header -->
-    <span id="aboutus"></span>
+    <span id="willkommen"></span>
 
     <!-- Main -->
     <div id="main">
         <div class="container">
 
+            <header>
+                <h2>Herzlich willkommen</h2>
+            </header>
+
             <!-- Über uns -->
             <div class="row">
 
-                <!-- Content -->
-                <div id="content" class="12u skel-cell-important">
+                <!-- Sidebar -->
+                <div id="sidebar" class="5u">
                     <section>
-                        <header>
-                            <h2>Über uns</h2>
-                            <span class="byline">Vivamus fermentum nibh in augue praesent congue rutrum</span>
-                        </header>
-                        <p>
-                            <a href="#" class="image full"><img src="images/pics02.jpg" alt=""></a>
-                        </p>
-                        <p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo.</p>
+
+                        <p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Maecenas luctus lectus at sapien. Consectetuer adipiscing elit.</p>
+
                     </section>
                 </div>
+                <!-- Sidebar -->
+
+                <!-- Content -->
+                <div id="content" class="7u skel-cell-important">
+                    <section>
+                        <p>Am 24. Juni 2017 wollen wir ganz offiziell „Ja“ sagen zueinander. Und wir freuen uns riesig darauf, gemeinsam mit euch unsere Hochzeit zu feiern. Im letzten Jahr haben wir uns in Kanada im Killarney National Park verlobt. Inzwischen sind wir mitten in den umfangreichen Vorbereitungen angelangt, damit unser grosser Tag zu einem ganz speziellen und unvergesslichen Fest mit euch allen wird.</p>
+                        <p>Ein tolles Fest braucht natürlich tolle Gäste. Schön, dass du dich hier auf unserer Hochzeitshomepage über die Hochzeitsfeier informierst. Wir hoffen, dass du hier die nötigen Informationen findest, um an unserem Fest dabei zu sein. Wir werden die Seite bis zurm Tag der Hochzeit stets mit Informationen ergänzen. Falls dir wichtige Informationen fehlen, darfst du dich jederzeit bei uns melden. Zum Beispiel via Email: hochzeit@miri-und-tim.ch.</p>
+                        <p>Gerne stellen wir euch unter Organisatorisches sämtliche Belange und Punkte vor, die für eine Hochzeit von Relevanz sein könnten, zum Beispiel unsere Trauzeugen und das Team, das uns bei der Hochzeit und der Vorbereitung unterstützt. Wir freuen uns, mit euch am 24. Juni 2017 unsere Hochzeit zu feiern!</p>
+                        <p>Bis bald!<br> Miri & Tim</p>
+                    </section>
+                </div>
+                <!-- /Content -->
+
             </div>
 
             <div class="divider" , id="hochzeit">&nbsp;</div>
             <!-- Hochzeit -->
             <header>
-                <h2>Hochzeit</h2>
+                <h2>Unsere Hochzeit</h2>
             </header>
             <div class="row">
                 <div class="3u">
                     <section>
-                        <a href="#" class="image full"><img src="images/schloss_bottmingen.jpg" alt="" /></a>
-                        <h3>Zivile Trauung</h3>
-                        <span><em>(04. Mai 2017 - 16:30 Uhr)</em></span>
-                        <p>Die zivile Trauung findet am 04. Mai im Schloss Bottmingen im kleinen Rahmen in der Familie in der Schweiz statt.</p>
-                        <a href="https://maps.google.com/?q=Kunigundenberg 1, 91207 Lauf an der Pegnitz, Germany" class="button">Anreise</a>
+
+                        <div><b style="font-size:130%">Zivile Trauung</b> <br>
+                            <em>(04. Mai 2017 - 16:30 Uhr)</em></div>
+                        <a href="http://www.weiherschloss.ch/" class="image full"><img src="images/schloss_bottmingen.jpg" alt="" /></a>
+                        <p align="justify">Im kleinen Kreise mit Familie und den Trauzeugen feiern wir die standesamtliche Hochzeit am Donnerstag dem 04. Mai im Weiherschloss Bottmingen (CH), wo wir fast schon unsere neue Heimat gefunden haben.</p>
+                        <a href="url">Koordinaten</a>
+                    </section>
+                </div>
+                
+                <div class="3u">
+                    <section>
+                        <div><b style="font-size:130%">Kirchliche Trauung</b> <br>
+                            <em>(24. Juni 2017 - 12:30 Uhr)</em></div>
+                        <a href="http://www.lauf-evangelisch.de/Kunigundenkirche.38.0.html" class="image full"><img src="images/lauf.jpg" alt="" /></a>
+                        <p align="justify">Die Kirchliche Trauung findet in der Kunigundenkirche in Lauf a.d. Pegnitz (D) statt. Alle sind herzlichst Eingeladen daran teilzunehmen. Nach der Zeremonie gibt es ein kleines Apèro. Unser <a href="http://derfotogrohf.de">Fotograf</a> macht anschliessend noch ein Gruppenfoto vor der Kirche.
+                        </p>
+                        <a href="url">Koordinaten</a>
+                    </section>
+                </div>
+                <div class="3u">
+                    <section>
+                        <div><b style="font-size:130%">Essen & Fest</b> <br>
+                            <em>(24. Juni 2017 - 15:30 Uhr)</em></div>
+                        <a href="http://www.schlossbauernhof.de/" class="image full"><img src="images/schlossbauernhof_3.jpg" alt="" /></a>
+                        <p align="justify">Das Essen und Fest findet im Schlossbauernhof in Stolzenroth statt. Dieses beginnt ca. um 15:30 mit Kaffee & Kuchen und geht anschliessend um 20:00 mit dem Essen weiter. Die Feier ist open-end und wird musikalisch von unsere <a href="http://www.toughtalk.de/">Band</a> begleitet.</p>
+                        <a href="url">Koordinaten</a>
                     </section>
                 </div>
 
                 <div class="3u">
                     <section>
-                        <a href="#" class="image full"><img src="images/kunigunden.jpg" alt="" /></a>
-                        <h3>Kirche</h3>
-                        <span><em>(24. Juni 2017 - 12:30 Uhr)</em></span>
-                        <p>Die Kirchliche Trauung findet in der Kunigundenkirche in Lauf a.d. Pegnitz in Deutschland statt. Alle sind herzlich Eingeladen teilzunehmen.</p>
-                        <a href="https://maps.google.com/?q=Kunigundenberg 1, 91207 Lauf an der Pegnitz, Germany" class="button">Anreise</a>
-                    </section>
-                </div>
-                <div class="3u">
-                    <section>
-                        <a href="#" class="image full"><img src="images/schlossbauernhof_1.jpg" alt="" /></a>
-                        <h3>Essen & Fest</h3>
-                        <span><em>(24. Juni 2017 - 15:30 Uhr)</em></span>
-                        <p>Das Essen und Fest findet im Schlossbauernhof in Stolzenroth statt. Dieses beginnt ca. um 15:30 mit Kaffee & Kuchen und geht anschliessen Pellentesque viverra enim. Tristique ante ut risus. Quisque dictum. Integer sagittis convallis elementum.</p>
-                        <a href="#" class="button">Read More</a>
-                    </section>
-                </div>
-
-                <div class="3u">
-                    <section>
-                        <a href="#" class="image full"><img src="images/australia.jpg" alt="" /></a>
-                        <h3>Hochzeitsreise</h3>
-                        <span><em>(08. Juli 2017 - 01. August 2017)</em></span>
-                        <p>Wir fliegen nach Australien :)</p>
-                        <a href="#" class="button">Read More</a>
+                        <div><b style="font-size:130%">Hochzeitsreise</b> <br>
+                            <em>(08. Juli 2017 - 01. August 2017)</em></div>
+                        <a href="http://www.australia.com" class="image full"><img src="images/australia.jpg" alt="" /></a>
+                        <p align="justify">Unsere 4-wöchige Hochzeitsreise geht nach Australien. Hier dürft ihr leider nicht mitkommen. Wenn ihr uns etwas für die Hochzeit schenken wollt, würden wir uns am meisten über einen Beitrag an die Reise freuen. Dafür zeigen wir euch im Anschluss ein paar Bilder :)</p>
+                        <a href="url">Koordinaten</a>
                     </section>
                 </div>
             </div>
@@ -137,13 +154,12 @@
                     <section id="content">
                         <header>
                             <h2>Trauzeugen</h2>
-                            <span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum</span>
                         </header>
                         <p>
                             <a href="#" class="image full"><img src="images/pics02.jpg" alt=""></a>
                         </p>
-                        <p>This is <strong>Monochromed</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
-                        <a href="#" class="button">Read More</a>
+                        <p>Unserem sensationellen Hochzeitsteam voist es zu verdanken, dass wir die Hochzeit in dem geplannten Rahmen durchführen können.</p>
+                        <p>Wer sich gedanklich oder sonstwie an der Arbeit des Hochzeitsteams beteiligen möchte, wer an der Hochzeit selbst aktiv eine Darbietung plant, der nimmt am besten zur Absprache und Koordination via mail@miri-und-tim.ch Kontakt mit ihnen auf.</p>
                     </section>
                 </div>
                 <!-- /Content -->
@@ -179,13 +195,15 @@
                 <div id="content" class="12u skel-cell-important">
                     <section>
                         <header>
-                            <h2>Hotels</h2>
-                            <span class="byline">Vivamus fermentum nibh in augue praesent congue rutrum</span>
+                            <h2>Übernachtungen</h2>
                         </header>
                         <p>
                             <a href="#" class="image full"><img src="images/pics02.jpg" alt=""></a>
                         </p>
-                        <p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo.</p>
+                        <p>Wer von unserern Gästen nach dem Fest noch gemütlich oder romantisch die Nacht in der Nähe vom Fest – wie das Brautpaar – verbringen möchte, kann das gerne tun.
+                        (Halt auf eigene Rechnung. Sorry :)) Die Zimmer sind günstiger als ein Ausweisentzug.</p>
+                        
+                        <p>Melde dich bitte direkt bei den jeweiligen Hotels. Mit dem Hinweis auf unsere Hochzeit erhältst du dort Zugriff auf ein vorreserviertes Kontingent an Zimmern.</p>
                     </section>
                 </div>
                 <!-- /Content -->
@@ -203,12 +221,12 @@
                     <section>
                         <header>
                             <h2>Anmeldung</h2>
-                            <span class="byline">Vivamus fermentum nibh in augue praesent congue rutrum</span>
                         </header>
-                        <p>
-                            <a href="#" class="image full"><img src="images/pics02.jpg" alt=""></a>
+                        <p>Damit wir unsere Hochzeit respektive die Umfänge des Essens, des benötigten Platzes in der Kirche, die Organisation eines etwaigen Fotoablaufs und Ähnliches abschätzen können, bitten wir um eine Anmeldung bis am 30. April 2017.</p>
+                        <p>Für eine Anmeldung zu kann das Formular auf dieser Seite ausgefüllt oder eine Email an folgende Adresse (bitte mit Anzahl Erwachsener & Kinder) geschrieben werden: mail@miri-und-tim.ch Selbstverständlich darfst du uns auch per Briefpost (Birsigstrasse 3, 4103 Bottmingen, Schweiz) wissen lassen, dass du kommst oder uns anrufen: +41 79 280 15 00 (Tim), 078 727 05 89 (Miriam)
                         </p>
-                        <p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo.</p>
+                        <p>Bezüglich dem Transport ist es wichtig anzumerken, dass ein Auto zwingend notwendig ist. Grundsätzlich gehen wir davon aus, dass ihr euch individuell organisiert. Sollte dies nicht möglich sein, meldet dies bitte im Kontakformular unten. Bei der Kirche wie auch beim Schlossbauernhof gibt es relativ grosse Parkplätze wo das Auto abgestellt werden kann. Am Abend wird ein Shuttelservice zu den jeweiligen Hotels organisiert.
+                        </p>
 
 
 
@@ -226,7 +244,7 @@
                             </fieldset>
 
                             <fieldset class="pure-group">
-                                <label for="email"><em>Your</em> Email Address:</label>
+                                <label for="email">Deine Email Addresse:</label>
                                 <input id="email" name="email" type="email" value="" required placeholder="dein.name@email.com" />
                                 <span id="email-invalid" style="visibility:hidden">
         Ups, dir ist anscheinden ein Fehler unterlaufen...</span>
@@ -258,7 +276,7 @@
                                 </label>
                             </fieldset>
 
-                            <button class="button-success pure-button button-xlarge">
+                            <button class="button-success pure-button button-xlarge" style="background:#FF0080">
             <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
                         </form>
@@ -280,7 +298,7 @@
     <!-- Footer -->
     <div id="copyright">
         <div class="container">
-            <a href="mailto:tim.hagmann@gmail.com" class="fa fa-envelope fa-5x"></a>                                       
+            <a href="mailto:tim.hagmann@gmail.com" class="fa fa-envelope fa-5x"></a>
             <a href="http://www.facebook.com/tim.hagmann" class="fa fa-facebook fa-5x"></a>
             <a href="https://github.com/greenore" class="fa fa-github fa-5x"></a>
             <a href="https://www.facebook.com/miriwalter" class="fa fa-facebook fa-5x"></a>
