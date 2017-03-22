@@ -4,10 +4,12 @@ jQuery(document).ready(function () {
     var marker2;
     
     // Coordinates
-    var lauf_ad_pegnitz = new google.maps.LatLng(49.5221459, 11.273036);
-    // var stolzenroth = new google.maps.LatLng(49.7643388, 10.7950555);
-    // var center = new google.maps.LatLng(49.68, 11.1);
+    var kirche = new google.maps.LatLng(49.5221459, 11.273036);
+    var stolzenroth = new google.maps.LatLng(49.7643388, 10.7950555);
+    var center = new google.maps.LatLng(49.68, 11.1);
     var nuremberg = new google.maps.LatLng(49.436009, 10.9584137);
+    var lauf_ad_pegnitz = new google.maps.LatLng(49.5159266, 11.2367675);
+
     var style = [
 		{
 		stylers: [
@@ -45,8 +47,8 @@ jQuery(document).ready(function () {
         fillColor: color,
         fillOpacity: 1,
         strokeColor: '#000',
-        strokeWeight: 2,
-        scale: 1,
+        strokeWeight: 4,
+        scale: 2,
         };
     }
     
@@ -62,17 +64,16 @@ jQuery(document).ready(function () {
         styles: style
     });
     
-/*
-    marker = new google.maps.Marker({
-        position: stolzenroth,
+/*    marker = new google.maps.Marker({
+        position: lauf_ad_pegnitz,
         map: map,
         draggable: false,
-        icon: pinSymbol("#FF0080")
-    });
-*/
+        icon: "",
+        label: {text: "Lauf a.d. Pegnitz", color: "#FF0080"}
+    });*/
     
     marker2 = new google.maps.Marker({
-        position: lauf_ad_pegnitz,
+        position: kirche,
         map: map,
         draggable: false,
         icon: pinSymbol("#FF0080"),
