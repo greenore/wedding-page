@@ -14,11 +14,14 @@
 
 /*********************************************************************************/
 
-#loadOverlay{display: none;}
+#loadOverlay {
+    display: none;
+}
 
 body {
     background: #090909;
 }
+
 body,
 input,
 textarea,
@@ -40,6 +43,7 @@ h5,
 h6 {
     font-weight: bold;
 }
+
 h1 a,
 h2 a,
 h3 a,
@@ -50,6 +54,7 @@ h6 a {
     text-decoration: none;
 }
 
+
 /* Change this to whatever font weight/color pairing is most suitable */
 
 strong,
@@ -57,38 +62,46 @@ b {
     font-weight: bold;
     color: #000000;
 }
+
 em,
 i {
     font-style: italic;
 }
+
 
 /* Don't forget to set this to something that matches the design */
 
 a {
     color: #FF0080;
 }
+
 a:hover {
     text-decoration: none;
 }
+
 sub {
     position: relative;
     top: 0.5em;
     font-size: 0.8em;
 }
+
 sup {
     position: relative;
     top: -0.5em;
     font-size: 0.8em;
 }
+
 hr {
     border: 0;
     border-top: solid 1px #ddd;
 }
+
 blockquote {
     border-left: solid 0.5em #ddd;
     padding: 1em 0 1em 2em;
     font-style: italic;
 }
+
 p,
 ul,
 ol,
@@ -96,21 +109,27 @@ dl,
 table {
     margin-bottom: 1em;
 }
+
 header {}
+
 header h2 {
     letter-spacing: -1px;
     font-weight: 700;
 }
+
 header .byline {
     display: block;
     text-transform: uppercase;
 }
+
 footer {
     margin-top: 1em;
 }
+
 br.clear {
     clear: both;
 }
+
 
 /* Buttons */
 
@@ -132,10 +151,12 @@ br.clear {
     transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
     cursor: pointer;
 }
+
 .button:hover {
     background: #141414;
     color: #FFF !important;
 }
+
 
 /* Sections/Articles */
 
@@ -143,51 +164,74 @@ section,
 article {
     margin-bottom: 3em;
 }
-section >:last-child,
-article >:last-child {
+
+section>:last-child,
+article>:last-child {
     margin-bottom: 0;
 }
+
 section:last-child,
 article:last-child {
     margin-bottom: 0;
 }
-.row > section,
-.row > article {
+
+.row>section,
+.row>article {
     margin-bottom: 0;
 }
+
 
 /* Images */
 
 .image {
     display: inline-block;
 }
+
 .image img {
     display: block;
     width: 100%;
     border-radius: 6px;
 }
+
 .image.featured {
     display: block;
     width: 100%;
     margin: 0 0 2em 0;
 }
+
 .image.full {
     display: block;
     width: 100%;
     margin: 0 0 2em 0;
 }
+
 .image.left {
     float: left;
     margin: 0 2em 2em 0;
 }
+
 .image.centered {
     display: block;
     margin: 0 0 2em 0;
 }
+
 .image.centered img {
     margin: 0 auto;
     width: auto;
 }
+
+#miri_tim {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 25em;
+    height: ;
+    display: block;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Lists */
 
@@ -196,26 +240,32 @@ ul.default {
     margin: 0;
     padding: 0;
 }
+
 ul.default li {
     padding: 0.50em 0em;
 }
+
 ul.style1 {
     font-size: 0.90em;
 }
+
 ul.style1 li {
     padding: 0.80em 0em;
     line-height: 1.8em;
 }
+
 ul.style1 li img {
     float: left;
     margin-right: 1.50em;
     border-radius: 6px;
 }
+
 ul.style1 .posted {
     display: block;
     margin-top: 1em;
     padding: 0.50em 0em;
 }
+
 
 /*********************************************************************************/
 
@@ -238,17 +288,21 @@ ul.style1 .posted {
     z-index: 0;
     top: 0;
 }
+
 #logo {
     z-index: 1;
     position: relative;
 }
+
 #nav {
     z-index: 2;
     position: relative;
 }
+
 #nav ul {
     margin: 0;
 }
+
 
 /*********************************************************************************/
 
@@ -264,6 +318,7 @@ ul.style1 .posted {
     color: #FFF;
 }
 
+
 /*********************************************************************************/
 
 
@@ -276,10 +331,12 @@ ul.style1 .posted {
     position: relative;
     background: #fff url(images/overlay.png) repeat;
 }
+
 .divider {
     overflow: hidden;
     border-top: 1px solid #dbdbdb;
 }
+
 
 /*********************************************************************************/
 
@@ -294,9 +351,11 @@ ul.style1 .posted {
     background: #121212;
     color: rgba(255, 255, 255, .4);
 }
+
 #footer header h2 {
     color: #FFF;
 }
+
 
 /*********************************************************************************/
 
@@ -312,7 +371,9 @@ ul.style1 .posted {
     text-align: center;
     color: #ddd;
 }
+
 #copyright .container {}
+
 #copyright a {
     text-decoration: none;
     color: #FF0080;
@@ -327,6 +388,7 @@ ul.style1 .posted {
     margin-right: 0.3em;
 }
 
+
 /*********************************************************************************/
 
 
@@ -336,36 +398,46 @@ ul.style1 .posted {
 /*********************************************************************************/
 
 aside {
-    background: #1f8dd6; /* same color as selected state on site menu */
+    background: #1f8dd6;
+    /* same color as selected state on site menu */
     padding: 0.3em 1em;
     border-radius: 3px;
     color: #fff;
     margin-bottom: 2em;
 }
+
 textarea {
-  width: 100%;
+    width: 100%;
 }
+
 .content-head {
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 2em 0 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
 }
+
 .is-center {
-  text-align: center;
+    text-align: center;
 }
+
 .button-success {
-  color: white;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: rgb(28, 184, 65); /* this is a green */
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(28, 184, 65);
+    /* this is a green */
 }
+
 .button-xlarge {
-  font-size: 125%;
+    font-size: 125%;
 }
+
 button {
-  float: right;
+    float: right;
 }
-#name, #email {
-  width: 50%;
+
+#name,
+#email {
+    width: 50%;
 }
