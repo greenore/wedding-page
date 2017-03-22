@@ -20,6 +20,7 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
@@ -46,6 +47,7 @@
             <!-- Nav -->
             <nav id="nav">
                 <ul>
+                    <li><a href="#aboutus">Über uns</a></li>
                     <li><a href="#hochzeit">Hochzeit</a></li>
                     <li><a href="#trauzeugen">Trauzeugen</a></li>
                     <li><a href="#hotels">Hotels</a></li>
@@ -56,19 +58,42 @@
     </div>
 
     <!-- Header -->
-    <span id="hochzeit"></span>
+    <span id="aboutus"></span>
 
     <!-- Main -->
     <div id="main">
         <div class="container">
+
+            <!-- Über uns -->
+            <div class="row">
+
+                <!-- Content -->
+                <div id="content" class="12u skel-cell-important">
+                    <section>
+                        <header>
+                            <h2>Über uns</h2>
+                            <span class="byline">Vivamus fermentum nibh in augue praesent congue rutrum</span>
+                        </header>
+                        <p>
+                            <a href="#" class="image full"><img src="images/pics02.jpg" alt=""></a>
+                        </p>
+                        <p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo.</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="divider" , id="hochzeit">&nbsp;</div>
+            <!-- Hochzeit -->
             <header>
                 <h2>Hochzeit</h2>
             </header>
             <div class="row">
                 <div class="3u">
                     <section>
-                        <a href="#" class="image full"><img src="images/kunigunden.jpg" alt="" /></a>
-                        <p>Zivile Trauung, am 04. Mai im Schloss Bottmingen im kleinen Rahmen in der Familie.</p>
+                        <a href="#" class="image full"><img src="images/schloss_bottmingen.jpg" alt="" /></a>
+                        <h3>Zivile Trauung</h3>
+                        <span><em>(04. Mai 2017 - 16:30 Uhr)</em></span>
+                        <p>Die zivile Trauung findet am 04. Mai im Schloss Bottmingen im kleinen Rahmen in der Familie in der Schweiz statt.</p>
                         <a href="https://maps.google.com/?q=Kunigundenberg 1, 91207 Lauf an der Pegnitz, Germany" class="button">Anreise</a>
                     </section>
                 </div>
@@ -76,22 +101,28 @@
                 <div class="3u">
                     <section>
                         <a href="#" class="image full"><img src="images/kunigunden.jpg" alt="" /></a>
-                        <p>12:30 Start Kundigundenkirche</p>
+                        <h3>Kirche</h3>
+                        <span><em>(24. Juni 2017 - 12:30 Uhr)</em></span>
+                        <p>Die Kirchliche Trauung findet in der Kunigundenkirche in Lauf a.d. Pegnitz in Deutschland statt. Alle sind herzlich Eingeladen teilzunehmen.</p>
                         <a href="https://maps.google.com/?q=Kunigundenberg 1, 91207 Lauf an der Pegnitz, Germany" class="button">Anreise</a>
                     </section>
                 </div>
                 <div class="3u">
                     <section>
                         <a href="#" class="image full"><img src="images/schlossbauernhof_1.jpg" alt="" /></a>
-                        <p>Pellentesque viverra enim. Tristique ante ut risus. Quisque dictum. Integer sagittis convallis elementum.</p>
+                        <h3>Essen & Fest</h3>
+                        <span><em>(24. Juni 2017 - 15:30 Uhr)</em></span>
+                        <p>Das Essen und Fest findet im Schlossbauernhof in Stolzenroth statt. Dieses beginnt ca. um 15:30 mit Kaffee & Kuchen und geht anschliessen Pellentesque viverra enim. Tristique ante ut risus. Quisque dictum. Integer sagittis convallis elementum.</p>
                         <a href="#" class="button">Read More</a>
                     </section>
                 </div>
 
                 <div class="3u">
                     <section>
-                        <a href="#" class="image full"><img src="images/pics13.jpg" alt="" /></a>
-                        <p>Tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis elementum.</p>
+                        <a href="#" class="image full"><img src="images/australia.jpg" alt="" /></a>
+                        <h3>Hochzeitsreise</h3>
+                        <span><em>(08. Juli 2017 - 01. August 2017)</em></span>
+                        <p>Wir fliegen nach Australien :)</p>
                         <a href="#" class="button">Read More</a>
                     </section>
                 </div>
@@ -190,7 +221,7 @@
                             </fieldset>
 
                             <fieldset class="pure-group">
-                                <label for="message">Message: </label>
+                                <label for="message">Nachricht: </label>
                                 <textarea id="message" name="message" rows="10" placeholder="Möchtest du uns etwas mitteilen, einfach hier reinschreiben..."></textarea>
                             </fieldset>
 
@@ -233,7 +264,7 @@
                         </form>
                         <!-- Customise the Thankyou Message People See when they submit the form: -->
                         <div style="display:none;" id="thankyou_message">
-                            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+                            <h2><em>Danke</em> für Deine Anmeldung. Wir freuen uns die Hochzeit mit Dir/Euch zu feiern!</h2>
                         </div>
 
                     </section>
@@ -247,12 +278,17 @@
     <!-- Main -->
 
     <!-- Footer -->
-    <div id="footer">
-        <div id="copyright">
-            <div class="container">
-                Tim & Miriam, Birsigstrasse 3, CH-4103 Bottmingen, Switzerland
-            </div>
+    <div id="copyright">
+        <div class="container">
+            <a href="mailto:tim.hagmann@gmail.com" class="fa fa-envelope fa-5x"></a>                                       
+            <a href="http://www.facebook.com/tim.hagmann" class="fa fa-facebook fa-5x"></a>
+            <a href="https://github.com/greenore" class="fa fa-github fa-5x"></a>
+            <a href="https://www.facebook.com/miriwalter" class="fa fa-facebook fa-5x"></a>
+            <a href="mailto:waltermiri@gmail.com" class="fa fa-envelope fa-5x"></a>
+
         </div>
+        <div class="container">
+            Tim Hagmann & Miriam Walter <br> Birsigstrasse 3, CH-4103 Bottmingen </div>
     </div>
     <!-- Footer -->
 
@@ -260,8 +296,8 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDzkt1iR61N5oteJfyDLMw4tb6OvDhvcE&callback=initMap"></script>
-   
-   
+
+
     <script src="js/skel.min.js"></script>
     <script src="js/skel-panels.min.js"></script>
     <script src="js/init.js"></script>

@@ -308,15 +308,22 @@ ul.style1 .posted {
     position: relative;
     padding: 3em 0em;
     text-align: center;
-    color: rgba(255, 255, 255, .2);
+    color: #ddd;
 }
 #copyright .container {}
 #copyright a {
     text-decoration: none;
-    color: rgba(255, 255, 255, .3);
+    color: #FF0080;
 }
 
+.fa {
+    margin-right: 0.2em;
+}
 
+.fa-github {
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
 
 /*********************************************************************************/
 
